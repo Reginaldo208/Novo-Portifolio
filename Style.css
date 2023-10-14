@@ -277,6 +277,7 @@ a
         justify-content: center;
         flex-direction: column;
         min-height: 135px;
+        position: fixed;
     }
 
     #a002
@@ -287,7 +288,7 @@ a
     
 }
 
-@media (max-width: 400px)
+@media (max-width: 420px)
 {
     #card
     {
@@ -308,4 +309,14 @@ a
         padding: 15px;
         margin: auto;
     }
+
+    header
+    {
+        justify-content: center;
+        flex-direction: column;
+        min-height: 135px;
+        width: 100%;
+        position: absolute;
+    }
 }
+
