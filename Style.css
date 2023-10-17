@@ -1,7 +1,7 @@
 .area{
     background: #4e54c8;  
     background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);  
-    width: 100%;
+    width: 99%;
     height:100vh;  
 }
 
@@ -123,6 +123,7 @@
 
 body
 {
+    width: 100%;
     display: flex;
     justify-content: center;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -344,8 +345,7 @@ a
 
 #corpo-cursos
 {
-    margin-top: 100px;
-    padding: 15px;
+    margin-top: 90px;
     width: 100%;
     height: none;
     display: flex;
@@ -358,23 +358,28 @@ a
 {
     display: flex;
     justify-content: space-evenly;
-    width: 90%;
+    width: 100%;
     align-items: center;
 }
 
 #logo
 {
+    width: 35%;
+    flex-grow: 1;
+    padding-left: 3%;
 }
 
 #info
 {
-    width: 60%;
+    width: 50%;
     text-align: right;
+    flex-grow: 5;
 }
 
 .info
 {
-    width: 80%;
+    width: 70%;
+    padding-right: 15%;
 }
 
 #outros
@@ -388,4 +393,68 @@ a
 .outros
 {
     width: 100%;
+}
+
+@media (max-width: 900px)
+{
+    #corpo-cursos
+    {
+        margin-top: 90px;
+        height: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    #destaque
+    {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+    }
+
+    #info
+    {
+        width: 50%;
+        text-align: center;
+        flex-grow: 0;
+    }
+
+    .info
+    {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    #logo
+    {
+        width: 80%;
+    }
+
+    .logo
+    {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    #outros
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;    
+        width: 100%;
+    }
+
+    .outros
+    {
+        width: 85%;
+    }
+
+
+}
+
+@media (max-width: 420px)
+{
+    
 }
