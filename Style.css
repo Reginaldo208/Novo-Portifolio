@@ -142,7 +142,7 @@ header
     background-color: rgba(0, 0, 0, 0.671);
 }
 
-main
+.main
 {
     width: 900px;
 }
@@ -222,6 +222,25 @@ a
     justify-content: left;
 }
 
+#conteudo2
+{
+    max-width: 100%;
+    padding: 15px;
+    flex-grow: 5;
+    gap: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#card:hover
+{
+    box-shadow: 5px 5px 0px aliceblue;
+    top: -5px;
+    left: -5px;
+}
+
 #card
 {
     max-width: 150px;
@@ -233,6 +252,7 @@ a
     padding: 10px;
     border-radius: 15px;
     text-align: center;
+    transition: all .3s ease-in-out
 }
 
 #miniatura
@@ -320,3 +340,52 @@ a
     }
 }
 
+/* Tela dos Cursos */
+
+#corpo-cursos
+{
+    margin-top: 100px;
+    padding: 15px;
+    width: 100%;
+    height: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#destaque
+{
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+    align-items: center;
+}
+
+#logo
+{
+}
+
+#info
+{
+    width: 60%;
+    text-align: right;
+}
+
+.info
+{
+    width: 80%;
+}
+
+#outros
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.outros
+{
+    width: 100%;
+}
